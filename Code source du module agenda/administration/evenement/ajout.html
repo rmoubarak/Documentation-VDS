@@ -1,0 +1,28 @@
+<div class='formulaire' style="max-width: 64rem">
+    <label for="date" class="col-form-label obligatoire">Date </label>
+    <input id="date"
+           type='date'
+           style="width: 160px;"
+           required
+           class="form-control">
+    <label class='col-form-label' for="titre">Titre</label>
+    <input type="text"
+           id='titre'
+           class="form-control"
+           required
+           minlength="3"
+           maxlength="150"
+           pattern="^[0-9A-Za-zÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ](?:[,' \-]?[0-9A-Za-zÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ])*$">
+    <label for="contenu" class="col-form-label">Description</label>
+    <textarea id='contenu' style="min-height: 250px"
+              class="form-control"></textarea>
+    <div class="d-flex justify-content-evenly">
+        <button id="btnAjouter" class="btn btn-danger mt-3">Ajouter</button>
+        <a href="index.php" class="btn btn-secondary mt-3">
+            <i class="bi bi-arrow-90deg-up"></i>
+            Annuler
+        </a>
+    </div>
+
+</div>
+
